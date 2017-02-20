@@ -11,9 +11,8 @@
 <h1>Registrese</h1>
 <p>Por favor, introduzca a continuación sus datos:</p> 
 			<form action="http:localhost:8081/Practica1/Registro" method="post">
-			Email:<br> <input type="email" name="email" required><br>
-			 Nombre:<br> <input type="text" name="nombre" required><br>
-			Apellidos:<br> <input type="text" name="apellidos" required><br>
+			Usuario:<br> <input type="email" name="user" required><br>
+			 Contraseña:<br> <input type="text" name="pass" required><br>
 				<input type="submit" value=Confirmar > 
 		</form>
 	</body> 
