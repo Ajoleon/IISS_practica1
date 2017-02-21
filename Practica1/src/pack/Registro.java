@@ -28,7 +28,7 @@ public class Registro extends HttpServlet {
 		String user = request.getParameter("user");
 		String pass = request.getParameter("pass");
 		String url = new String("");
-		if(user=="admin" && pass =="admin"){
+		if(user.equals("admin") && pass.equals("admin")){
 			url = "/Admin.jsp";
 		}else{
 			url = "/User.jsp";

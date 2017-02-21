@@ -11,8 +11,8 @@
 <h1>Registrese</h1>
 <p>Por favor, introduzca a continuación sus datos:</p> 
 			<form action="/Practica1/Registro" method="post">
-			Usuario:<br> <input type="email" name="user" required><br>
-			 Contraseña:<br> <input type="text" name="pass" required><br>
+				Usuario:<br> <input type="text" name="user" required><br>
+				Contraseña:<br> <input type="password" name="pass" required><br>
 				<input type="submit" value=Confirmar > 
 		</form>
 	</body> 

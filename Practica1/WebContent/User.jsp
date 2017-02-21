@@ -7,6 +7,14 @@
 <title>Usuario</title>
 </head>
 <body>
- USUARIO
-</body>
+
+<h1>Unos pasos mas...</h1>
+<p>Por favor, introduzca a continuación unos datos extra:</p> 
+			<form action="/Practica1/Registro" method="post">
+				Telefono:<br> <input type="text" name="tlf" required><br>
+				E-mail:<br> <input type="email" name="email" required><br>
+				Direccion Postal:<br> <input type="text" name="dir" required><br>
+				<input type="submit" value=Confirmar > 
+		</form>
+	</body>
 </html>
