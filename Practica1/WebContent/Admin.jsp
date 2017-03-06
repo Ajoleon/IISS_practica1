@@ -9,14 +9,18 @@
 		<title>Administración</title>
 	</head>
 		<body>
-		<h1>Pagina de administración</h1>
-		<table> 
-			 <tr>
-			  <th> ID </th>
-			  <th> Cookie </th>
-			  </tr>
-			   <td><c:out value = "${user.ID}" /> <br></td>
-			   <td><c:out value = "${user.cookie}" /> <br></td>
-		</table>
+		<h1>Página de Administración</h1>
+		<table>
+     <tr style="background:#BDBDBD">
+     <th> ID </th>
+     <th> Cookie </th>
+  </tr>
+ <c:forEach items="${usuario}" var="user">
+    <td><c:out value="${user.ID}" /></td>
+    <td><c:out value="${user.JSESSIONID.value}" /></td>
+   </tr>
+   
+ </c:forEach>
+  </table>
 	</body>
 </html>
