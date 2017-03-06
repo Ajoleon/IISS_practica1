@@ -15,9 +15,9 @@
      <th> ID </th>
      <th> Cookie </th>
   </tr>
- <c:forEach items="${usuario}" var="user">
-    <td><c:out value="${user.ID}" /></td>
-    <td><c:out value="${user.JSESSIONID.value}" /></td>
+ <c:forEach items="${cookie}" var="user">
+    <td><c:out value="${user.value.name}" /></td>
+    <td><c:out value="${user.value.value}" /></td>
    </tr>
    
  </c:forEach>

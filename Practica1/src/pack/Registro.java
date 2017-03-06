@@ -32,11 +32,13 @@ public class Registro extends HttpServlet {
 		String pass = request.getParameter("pass");
 		String url = new String("");
 		if(user.equals("admin") && pass.equals("admin")){
+			HttpSession session = request.getSession(true);
+			session.setAttribute("name","administrador");
 			
 			url = "/Admin.jsp";
 		}else{
 			
-		}
+		
 			HttpSession session = request.getSession(true );
 			session.setAttribute("nombre",user);
 			url = "/registro.jsp";
@@ -44,6 +46,7 @@ public class Registro extends HttpServlet {
 			
 			
 		
+		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
 
 	}
