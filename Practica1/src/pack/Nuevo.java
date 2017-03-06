@@ -9,42 +9,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
 /**
- * Servlet implementation class Registro
+ * Servlet implementation class index
  */
-@WebServlet("/Registro")
-public class Registro extends HttpServlet {
+@WebServlet("/Nuevo")
+public class Nuevo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-   
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub	
-		//Leemos parametros
-		String user = request.getParameter("user");
-		String pass = request.getParameter("pass");
-		String url = new String("");
-		if(user.equals("admin") && pass.equals("admin")){
-			url = "/Admin.jsp";
-		}else{
-			
-		}
-			HttpSession session = request.getSession(true );
-			session.setAttribute("nombre",user);
-			url = "/registro.jsp";
-			// Primero se comprueba si existe si la sesion tiene un usuario
-			
-			
-		
+		// TODO Auto-generated method stub
+		String tlf = request.getParameter("tlf");
+		String dir = request.getParameter("dir");
+		String email = request.getParameter("email");
+		HttpSession session = request.getSession(true );
+		String user = (String)session.getAttribute("name");
+		Usuario usuario  = new Usuario(user,email,dir,tlf);
+		session.setAttribute("usuario", usuario);
+		String url = "/shop.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
-
 	}
 
 	/**
