@@ -23,20 +23,7 @@
   
   </head>
   <body>
-   
-    <div class="site-branding-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo">
-                        <h1><a href="./"><img src="img/logo.png"></a></h1>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </div>
-    </div> <!-- End site branding area -->
+    <!-- End site branding area -->
     
     <div class="mainmenu-area">
         <div class="container">
@@ -51,8 +38,8 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/Shop">Tienda</a></li>
-                        <li class="/Cart"><a href="cart.html">Carrito</a></li>
+                        <li><a href="/Practica1/Shop">Tienda</a></li>
+                        <li class="active"><a href="/Practica1/Cart">Carrito</a></li>
 
                     </ul>
                 </div>  
