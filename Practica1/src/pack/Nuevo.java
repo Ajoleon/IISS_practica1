@@ -26,7 +26,7 @@ public class Nuevo extends HttpServlet {
 		c.setMaxAge(60*60*24*365*2);
 		c.setPath("/");
 		response.addCookie(c);
-		Usuario usuario  = new Usuario(user,email,dir,tlf);
+		UsuarioDTO usuario  = new UsuarioDTO(user,email,dir,tlf);
 		session.setAttribute("usuario", usuario);
 		String url = "/shop.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
