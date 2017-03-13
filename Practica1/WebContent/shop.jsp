@@ -86,7 +86,10 @@
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="1">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
                         </div>                       
                     </div>
                 </div>
@@ -99,7 +102,10 @@
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="2">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
                         </div>                       
                     </div>
                 </div>
@@ -111,8 +117,11 @@
                             <ins>4 &euro;</ins>
                         </div>  
                         
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
+                       <div class="product-option-shop">
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="3">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
                         </div>                       
                     </div>
                 </div>
@@ -125,8 +134,11 @@
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
-                        </div>                       
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="4">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -137,8 +149,11 @@
                             <ins>25 &euro;</ins>
                         </div>  
                         
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
+                       <div class="product-option-shop">
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="5">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
                         </div>                       
                     </div>
                 </div>
@@ -151,8 +166,11 @@
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
-                        </div>                       
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="6">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -164,7 +182,10 @@
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="7">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
                         </div>                       
                     </div>
                 </div>
@@ -177,8 +198,11 @@
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
-                        </div>                       
+                        	<form action="/Practica1/Shop" method=post>
+                        		<input type="hidden" name="suma" value="8">
+                        		<input type="submit" value="Incluir en carrito">
+                       		</form>
+                        </div>                        
                     </div>
                 </div>
                 
