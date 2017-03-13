@@ -1,27 +1,25 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+	<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />			
 
     <title>Tienda</title>
-    
-    <!-- Google Fonts -->
-    <link href="/estilos/css/font1" rel='stylesheet' type='text/css'>
-    <link href="/estilos/css/font2" rel='stylesheet' type='text/css'>
-    <link href="/estilos/css/font3" rel='stylesheet' type='text/css'>
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="estilo/css/bootstrap.min.css">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/estilos/css/font-awesome.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="estilos/css/owl.carousel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="estilos/css/responsive.css">
-
+   
+	    
+		<style type="text/css">
+	  			<%@include file="estilo/css/font1.css" %>
+	  			<%@include file="estilo/css/font2.css" %>
+	  			<%@include file="estilo/css/font3.css" %>
+	  			<%@include file="estilo/css/bootstrap.min.css" %>
+	  			<%@include file="estilo/css/font-awesome.min.css" %>
+	  			<%@include file="estilo/css/owl.carousel.css" %>
+	  			<%@include file="estilo/style.css" %>
+	  			<%@include file="estilo/css/responsive.css" %>
+	  			
+		</style>
   
   </head>
   <body>
@@ -33,7 +31,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="./"><img src="img/logo.png"></a></h1>
+                        
                     </div>
                 </div>
                 
@@ -53,10 +51,9 @@
                     </button>
                 </div> 
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li class="active"><a href="shop.html">Todos</a></li>
-                        <li><a href="cart.html">Carrito</a></li>
+                    <ul class="nav navbar-nav"> 
+                        <li class="active"><a href="/Shop">Tienda</a></li>
+                        <li><a href="/Carrito">Carrito</a></li>
                     </ul>
                 </div>  
             </div>
@@ -82,184 +79,109 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-2.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        
+                        <h2><a href="">Pienso para perro. 1 kg</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>10 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-1.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        
+                        <h2><a href="">At&uacute;n para gatos. 0.5 kg</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>5 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-3.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        
+                        <h2><a href="">Alpiste para p&aacute;jaro. 1 kg</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>4 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-4.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                       
+                        <h2><a href="">Comida de peces. Bote de 0.5 kg</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>12 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-2.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        
+                        <h2><a href="">Masticador de perro.</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>25 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-1.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                       
+                        <h2><a href="">Arenero para gatos.</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>30 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-3.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                       
+                        <h2><a href="">Pecera.</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>50 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-4.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        
+                        <h2><a href="">Jaula de p&aacute;jaro.</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>40 &euro;</ins>
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">A&ntilde;adir al carrito</a>
                         </div>                       
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-2.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-1.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-3.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-4.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
+                
             </div>
             
             
@@ -273,13 +195,13 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!-- jQuery sticky menu -->
-    <script src="tienda/js/owl.carousel.min.js"></script>
-    <script src="tienda/js/jquery.sticky.js"></script>
+    <script src="estilo/js/owl.carousel.min.js"></script>
+    <script src="estilo/js/jquery.sticky.js"></script>
     
     <!-- jQuery easing -->
-    <script src="tienda/js/jquery.easing.1.3.min.js"></script>
+    <script src="estilo/js/jquery.easing.1.3.min.js"></script>
     
     <!-- Main Script -->
-    <script src="tienda/js/main.js"></script>
+    <script src="estilo/js/main.js"></script>
   </body>
 </html>
