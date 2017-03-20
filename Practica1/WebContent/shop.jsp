@@ -80,7 +80,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         
-                        <h2><a href="">Pienso para perro. 1 kg</a></h2>
+                        <h2>Pienso para perro. 1 kg</h2>
                         <div class="product-carousel-price">
                             <ins>10 &euro;</ins>
                         </div>  
@@ -96,7 +96,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         
-                        <h2><a href="">At&uacute;n para gatos. 0.5 kg</a></h2>
+                        <h2>At&uacute;n para gatos. 0.5 kg</h2>
                         <div class="product-carousel-price">
                             <ins>5 &euro;</ins>
                         </div>  
@@ -112,7 +112,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         
-                        <h2><a href="">Alpiste para p&aacute;jaro. 1 kg</a></h2>
+                        <h2>Alpiste para p&aacute;jaro. 1 kg</h2>
                         <div class="product-carousel-price">
                             <ins>4 &euro;</ins>
                         </div>  
@@ -128,7 +128,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                        
-                        <h2><a href="">Comida de peces. Bote de 0.5 kg</a></h2>
+                        <h2>Comida de peces. Bote de 0.5 kg</h2>
                         <div class="product-carousel-price">
                             <ins>12 &euro;</ins>
                         </div>  
@@ -144,7 +144,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         
-                        <h2><a href="">Masticador de perro.</a></h2>
+                        <h2>Masticador de perro.</h2>
                         <div class="product-carousel-price">
                             <ins>25 &euro;</ins>
                         </div>  
@@ -160,7 +160,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                        
-                        <h2><a href="">Arenero para gatos.</a></h2>
+                        <h2>Arenero para gatos.</h2>
                         <div class="product-carousel-price">
                             <ins>30 &euro;</ins>
                         </div>  
@@ -176,7 +176,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                        
-                        <h2><a href="">Pecera.</a></h2>
+                        <h2>Pecera.</h2>
                         <div class="product-carousel-price">
                             <ins>50 &euro;</ins>
                         </div>  
@@ -192,7 +192,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         
-                        <h2><a href="">Jaula de p&aacute;jaro.</a></h2>
+                        <h2>Jaula de p&aacute;jaro.</h2>
                         <div class="product-carousel-price">
                             <ins>40 &euro;</ins>
                         </div>  

@@ -41,24 +41,23 @@
                                             
                                         </tr>
                                     </thead>
-					 <c:forEach items="${cookie}" var="user">
+					 
 					     <tbody>
+					     	<c:forEach items="${cookie}" var="user">
                                         <tr class="cart_item">
 
-                                            <td class="product-name">
-                                                <c:out value="${user.value.name }"/>
-                                            </td>
+	                                            <td class="product-name">
+	                                                <c:out value="${user.value.name }"/>
+	                                            </td>
+	
+	                                            <td class="product-price">
+	                                                <c:out value="${user.value.value}"/>
+	                                            </td>
 
-                                            <td class="product-price">
-                                                <c:out value="${user.value.value}"/>
-                                            </td>
-
-
-                                            
-                                        </tr>
-                                        
+                                        	</tr>
+                                        </c:forEach>
                                    	 </tbody>
-                                    </c:forEach>
+                                    
                                 </table>
    
  					

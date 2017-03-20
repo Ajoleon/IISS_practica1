@@ -16,9 +16,10 @@ public class Cart extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		String url = "/cart.jsp";
 		
-
+		
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
 	}
 

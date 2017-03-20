@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 
 <!DOCTYPE html>
 <html>
@@ -59,6 +60,7 @@
     </div> <!-- End Page title area -->
      <div class="col-md-8">
                     <div class="product-content-right">
+	                   
                         <div class="woocommerce">
                             <form method="post" action="#">
                                 <table cellspacing="0" class="shop_table cart">
@@ -68,34 +70,34 @@
                                             
                                             <th class="product-name">Producto</th>
                                             <th class="product-price">Precio</th>
-                                            
+                                            <th class="product-price">Cantidad</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="cart_item">
-                                            <td class="product-remove">
-                                                <a title="Remove this item" class="remove" href="#">X</a> 
-                                            </td>
-
-                                           
-
-                                            <td class="product-name">
-                                                <a href="single-product.html">Ship Your Idea</a> 
-                                            </td>
-
-                                            <td class="product-price">
-                                                <span class="amount">£15.00</span> 
-                                            </td>
-
-
-                                            
-                                        </tr>
-                                        
+                                    <c:forEach items="${itemsGuardados}" var="prod">
+	                                        <tr class="cart_item">
+	                                            <td class="product-remove">
+	                                                <a title="Remove this item" class="remove" href="#">X</a> 
+	                                            </td>
+	                                            <td class="product">
+	                                                <c:out value = "${prod.value.nombre}"/>
+	                                            </td>
+	                                             <td class="product">
+	                                                <c:out value = "${prod.value.precio}"/> 
+	                                            </td>
+	                                             <td class="product">
+	                                                <c:out value = "${prod.value.cantidad}"/>
+	                                            </td>
+	                                        </tr>
+                                       </c:forEach>
                                     </tbody>
                                 </table>
                             </form>
+                            
+                        
+                         
 		</div>
-    
+     		<c:out value = "${usuario.value.user}" />
     
     
     
