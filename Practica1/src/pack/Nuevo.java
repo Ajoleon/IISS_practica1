@@ -21,7 +21,7 @@ public class Nuevo extends HttpServlet {
 		String dir = request.getParameter("dir");
 		String email = request.getParameter("email");
 		HttpSession session = request.getSession(true );
-		String user = (String)session.getAttribute("name");
+		String user = (String)session.getAttribute("nombre");
 		Cookie c = new Cookie("emailCookie", email); 
 		c.setMaxAge(60*60*24*365*2);
 		c.setPath("/");

@@ -25,7 +25,7 @@ public class Shop extends HttpServlet {
 		int seleccion = 0;
 		HashMap itemsGuardados = (HashMap) session.getAttribute("itemsGuardados");
 		if(request.getParameter("suma")!=null){
-			seleccion = Integer.parseInt(request.getParameter("suma"));
+			seleccion = Integer.parseInt(request.getParameter("suma"))-1;
 			
 			if(itemsGuardados!=null){
 				System.out.println("añado otro prod");
