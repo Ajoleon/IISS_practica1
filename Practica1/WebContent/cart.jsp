@@ -82,7 +82,7 @@
                                     <c:forEach items="${itemsGuardados}" var="prod">
 	                                        <tr class="cart_item">
 	                                            <td class="product-remove">
-	                                                <a title="Remove this item" class="remove" href="#">X</a> 
+	                                                <a title="Remove this item" class="remove" href="/">X</a> 
 	                                            </td>
 	                                            <td class="product">
 	                                                <c:out value = "${prod.value.nombre}"/>

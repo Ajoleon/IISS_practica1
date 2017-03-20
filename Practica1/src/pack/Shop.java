@@ -49,7 +49,13 @@ public class Shop extends HttpServlet {
 				pro.setCantidad(1);
 				itemsGuardados.put(seleccion, pro);
 			}
-		}	
+		}
+		if(request.getParameter("resta")!=null){
+			int resta = Integer.parseInt(request.getParameter("resta"));
+			Producto res = (Producto) itemsGuardados.get(resta);
+			itemsGuardados.remove(resta, res);
+			
+		}
 		session.setAttribute("itemsGuardados", itemsGuardados);
 		String url = "/shop.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
