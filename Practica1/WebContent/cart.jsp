@@ -63,6 +63,7 @@
     		<p><h3>Direccion postal:</h3><c:out value = "${usuario.dir}" /></p>
     		<p><h3>Telefono: </h3><c:out value = "${usuario.tlf}" /></p>
     		<p><h3>Email: </h3><c:out value = "${usuario.email}" /></p>
+    <h2><p>Total a pagar: <c:out value = "${total}" /> &euro;</p> </h2>
      <div class="col-md-8">
                     <div class="product-content-right">
 	                   

@@ -28,6 +28,7 @@ public class Nuevo extends HttpServlet {
 		response.addCookie(c);
 		UsuarioDTO usuario  = new UsuarioDTO(user,email,dir,tlf);
 		session.setAttribute("usuario", usuario);
+		session.setAttribute("total", 0);
 		String url = "/shop.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
 	}

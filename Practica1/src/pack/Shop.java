@@ -24,6 +24,7 @@ public class Shop extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		int seleccion = 0;
 		HashMap itemsGuardados = (HashMap) session.getAttribute("itemsGuardados");
+		int total = (int) session.getAttribute("total");
 		if(request.getParameter("suma")!=null){
 			seleccion = Integer.parseInt(request.getParameter("suma"))-1;
 			
@@ -34,12 +35,14 @@ public class Shop extends HttpServlet {
 				if(pro!=null){
 					pro.setCantidad(pro.getCantidad()+1);
 					itemsGuardados.put(seleccion, pro);
+					total = total + Integer.parseInt(pro.getPrecio());
 				}else{
 					System.out.println("creo prod ");
 
 					Producto pro1 = new Producto(productos[seleccion],precios[seleccion]);
 					pro1.setCantidad(1);
 					itemsGuardados.put(seleccion, pro1);
+					total = total + Integer.parseInt(pro1.getPrecio());
 				}
 				
 			}else{
@@ -48,6 +51,8 @@ public class Shop extends HttpServlet {
 				Producto pro = new Producto(productos[seleccion],precios[seleccion]);
 				pro.setCantidad(1);
 				itemsGuardados.put(seleccion, pro);
+				total = Integer.parseInt(pro.getPrecio());
+
 			}
 		}
 		if(request.getParameter("resta")!=null){
@@ -57,6 +62,7 @@ public class Shop extends HttpServlet {
 			
 		}
 		session.setAttribute("itemsGuardados", itemsGuardados);
+		session.setAttribute("total", total);
 		String url = "/shop.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
 	}
