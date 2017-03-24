@@ -83,7 +83,10 @@
                                     <c:forEach items="${itemsGuardados}" var="prod">
 	                                        <tr class="cart_item">
 	                                            <td class="product-remove">
-	                                                <a title="Remove this item" class="remove" href="/">X</a> 
+	                                               <form action="/Practica1/Shop" method=post>
+                        								<input type="hidden" name="resta" value=${prod.value.id}>
+                        								<input type="submit" value="Eliminar de carrito">
+                       								</form> 
 	                                            </td>
 	                                            <td class="product">
 	                                                <c:out value = "${prod.value.nombre}"/>

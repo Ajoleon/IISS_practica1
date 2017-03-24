@@ -4,10 +4,12 @@ public class Producto {
 	String nombre;
 	String precio;
 	int cantidad;
-	public Producto(String nombre, String precio) {
+	int id; 
+	public Producto(String nombre, String precio, int id) {
 		this.cantidad = cantidad;
 		this.nombre = nombre;
 		this.precio = precio;
+		this.id = id;
 	}
 	public String getNombre() {
 		return nombre;
@@ -26,6 +28,12 @@ public class Producto {
 	}
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	 
 	

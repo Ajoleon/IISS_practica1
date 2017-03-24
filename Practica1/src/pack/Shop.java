@@ -39,7 +39,7 @@ public class Shop extends HttpServlet {
 				}else{
 					System.out.println("creo prod ");
 
-					Producto pro1 = new Producto(productos[seleccion],precios[seleccion]);
+					Producto pro1 = new Producto(productos[seleccion],precios[seleccion],seleccion+1);
 					pro1.setCantidad(1);
 					itemsGuardados.put(seleccion, pro1);
 					total = total + Integer.parseInt(pro1.getPrecio());
@@ -48,7 +48,7 @@ public class Shop extends HttpServlet {
 			}else{
 				System.out.println("creo lista");
 				itemsGuardados = new HashMap();
-				Producto pro = new Producto(productos[seleccion],precios[seleccion]);
+				Producto pro = new Producto(productos[seleccion],precios[seleccion],seleccion+1);
 				pro.setCantidad(1);
 				itemsGuardados.put(seleccion, pro);
 				total = Integer.parseInt(pro.getPrecio());
@@ -59,6 +59,8 @@ public class Shop extends HttpServlet {
 			int resta = Integer.parseInt(request.getParameter("resta"));
 			Producto res = (Producto) itemsGuardados.get(resta);
 			itemsGuardados.remove(resta, res);
+			total = total - (res.getCantidad()*Integer.parseInt(res.getPrecio()));
+			System.out.println("entro");
 			
 		}
 		session.setAttribute("itemsGuardados", itemsGuardados);
