@@ -63,12 +63,12 @@
     		<p><h3>Direccion postal:</h3><c:out value = "${usuario.dir}" /></p>
     		<p><h3>Telefono: </h3><c:out value = "${usuario.tlf}" /></p>
     		<p><h3>Email: </h3><c:out value = "${usuario.email}" /></p>
-    <h2><p>Total a pagar: <c:out value = "${total}" /> &euro;</p> </h2>
+    <h2>Total a pagar: <c:out value = "${total}" /> &euro;</h2>
      <div class="col-md-8">
                     <div class="product-content-right">
 	                   
                         <div class="woocommerce">
-                            <form method="post" action="#">
+                            
                                 <table cellspacing="0" class="shop_table cart">
                                     <thead>
                                         <tr>
@@ -84,7 +84,7 @@
 	                                        <tr class="cart_item">
 	                                            <td class="product-remove">
 	                                               <form action="/Practica1/Shop" method=post>
-                        								<input type="hidden" name="resta" value=${prod.value.id}>
+                        								<input type="hidden" name="resta" value="${prod.value.id}">
                         								<input type="submit" value="Eliminar de carrito">
                        								</form> 
 	                                            </td>
@@ -97,6 +97,7 @@
 	                                             <td class="product">
 	                                                <c:out value = "${prod.value.cantidad}"/>
 	                                            </td>
+	                                          
 	                                        </tr>
                                        </c:forEach>
                                     </tbody>
@@ -104,8 +105,9 @@
                             </form>
                             
                         
-                         
-		</div>
+                   </div>      
+				</div>
+			</div>
 		
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>

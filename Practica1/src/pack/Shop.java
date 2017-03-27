@@ -21,6 +21,7 @@ public class Shop extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		String url = "";
 		HttpSession session = request.getSession(true);
 		int seleccion = 0;
 		HashMap itemsGuardados = (HashMap) session.getAttribute("itemsGuardados");
@@ -39,7 +40,7 @@ public class Shop extends HttpServlet {
 				}else{
 					System.out.println("creo prod ");
 
-					Producto pro1 = new Producto(productos[seleccion],precios[seleccion],seleccion+1);
+					Producto pro1 = new Producto(productos[seleccion],precios[seleccion],seleccion);
 					pro1.setCantidad(1);
 					itemsGuardados.put(seleccion, pro1);
 					total = total + Integer.parseInt(pro1.getPrecio());
@@ -48,24 +49,29 @@ public class Shop extends HttpServlet {
 			}else{
 				System.out.println("creo lista");
 				itemsGuardados = new HashMap();
-				Producto pro = new Producto(productos[seleccion],precios[seleccion],seleccion+1);
+				Producto pro = new Producto(productos[seleccion],precios[seleccion],seleccion);
 				pro.setCantidad(1);
 				itemsGuardados.put(seleccion, pro);
 				total = Integer.parseInt(pro.getPrecio());
 
 			}
+		url ="/cart.jsp";
 		}
 		if(request.getParameter("resta")!=null){
 			int resta = Integer.parseInt(request.getParameter("resta"));
-			Producto res = (Producto) itemsGuardados.get(resta);
-			itemsGuardados.remove(resta, res);
-			total = total - (res.getCantidad()*Integer.parseInt(res.getPrecio()));
-			System.out.println("entro");
+			System.out.println(resta);
 			
+				Producto res = (Producto) itemsGuardados.get(resta);
+				itemsGuardados.remove(resta);
+				total = total - (res.getCantidad()*Integer.parseInt(res.getPrecio()));
+				System.out.println("entro");
+		url = "/cart.jsp";	
+		}
+		if(url.equals("")){
+			url ="/shop.jsp";
 		}
 		session.setAttribute("itemsGuardados", itemsGuardados);
 		session.setAttribute("total", total);
-		String url = "/shop.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);	
 	}
 
